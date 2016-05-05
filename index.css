@@ -1,7 +1,11 @@
-body{
+body,html{
 	margin:0px;
-	background-color: #111;	
 }
+
+body:before {
+    filter: blur(20px);
+}
+
 
 .nav .container ul{
 	list-style-type: none;
