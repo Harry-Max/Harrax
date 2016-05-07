@@ -1,9 +1,24 @@
 body,html{
 	margin:0px;
+
 }
 
-body:before {
-    filter: blur(20px);
+
+.background-image {
+  background-image: url('src/images/polygon_bg.jpg');
+  background-size: cover;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
 }
 
 
@@ -12,7 +27,10 @@ body:before {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background: rgba(255, 255, 255, 0.35);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
 }
 
 .nav .container li{
@@ -30,34 +48,36 @@ body:before {
 }
 
 .nav .container li a:hover{
-	background-color: #111;
+	background: rgba(51, 51, 51, 0.3);
 }
 
 .nav .container li a:hover.active{
-	background-color: #4CAF50;
+	background: rgba(245,142,51, 0.8);
 }
 
 .nav .container li a:hover.nav-header{
-	background-color: #4CAF50;
+	background: rgba(245,142,51, 0.8);
 }
 
 .nav .container .active{
-	background-color: #4CAF50;
+	background: rgba(245,142,51, 0.8);
 }
 
 .nav .container .nav-header{
-	background-color:#4CAF50;
+	background: rgba(245,142,51, 0.45);
 }
 
 .header{
-	
-}
-
-.header .container{
 	padding-left:150px;
 	padding-top:150px;
 	font-family: "Arial", Times, sans-serif;
-	color:#FFF;
+	position: fixed;
+  	z-index: 2;
+}
+
+.header .container{
+	
+  
 }
 
 .header .container h1{
