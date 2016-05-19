@@ -8,17 +8,19 @@ body,html{
   background-image: url('src/images/polygon_bg.jpg');
   background-size: cover;
   display: block;
-  height: 100%;
+  height: 105%;
   left: 0;
   position: fixed;
   right: 0;
   z-index: 1;
 
-  -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -o-filter: blur(4px);
-  -ms-filter: blur(4px);
-  filter: blur(4px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  
+  margin: -10px -15px -15px -10px;
 }
 
 
@@ -64,8 +66,7 @@ body,html{
 }
 
 .nav .container .nav-header{
-	background: rgba(245,142,51, 0.45);
-}
+	background: rgba(192,106,20,0.5)}
 
 .header{
 	padding-left:150px;
